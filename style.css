@@ -1,14 +1,19 @@
 .corpo {
     background-color: #2b2c34;
-    height: 100vb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
+
+/* Barra de Navegação */
 div a{
     color: #2b2c34;
 }
 
 nav {
-    padding: 0.5%;
+    padding: 1em;
     background-color: white;
     display: flex;
     align-items: center;
@@ -23,114 +28,108 @@ nav ul {
 }
 
 .logo {
-    margin-left: 23%;
+    margin-left: 28em;
 }
 
 .user {
-    margin-left: 35%;
+    margin-left: 52em;
 }
 
+
+/* Apresentação da Linguagem */
 main {
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 main h1 {
     color: white;
-    margin-top: 5%;
+    margin-top: 2em;
 }
 
 main h3 {
     color: rgb(255, 199, 114);
-    margin-top: -2%;
 }
 
 main img {
-    /* width: 500px;
-    height: 300px; */
     width: 35em;
     height: 20em;
     border-radius: 10px;
-    margin-left: 1%;
     -webkit-box-shadow: 0px 0px 24px 18px rgba(255,255,255,0.23); 
     box-shadow: 0px 0px 24px 18px rgba(255,255,255,0.23);
 }
 
+
+/* Sessão HTML */
 .html{
     background-color: #dcece3;
-    width: 100%;
     height: auto;
-    margin-top: 5%;
+    width: 100%;
 }
 
 .html h1{
-    padding: 5%;
-    margin-left: 30%;
+    padding: 2.5em;
+    margin-left: 14em;
 }
 
 .html h4{
-    margin-top: -7%;
-    margin-bottom: 1%;
-    margin-left: 28%;
+    margin-top: -5em;
+    margin-left: 22em;  
     color: #4a8664;
 }
 
 .html button{
-    margin-left: 35%;
-}
-
-.html p{
-    padding-bottom: 5%;
-    color: #dcece3;
+    margin-left: 41.5em;
 }
 
 .htmlIMG{
     width: 20em;
     height: 25em;
-    margin-left: 60%;
-    margin-top: -22%;
+    margin-left: 75em;
+    margin-top: -16em;
+    margin-bottom: 3em;
 }
 
 
+/* Sessão CSS */
 .css{
     background-color: #fcf4a4;
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .css h1{
-    padding: 5%;
-    margin-left: 31%;
+    padding: 2.5em;
+    margin-left: 14.5em;
 }
 
 .css h4{
-    margin-top: -7%;
-    margin-bottom: 1%;
-    margin-left: 29%;
+    margin-top: -5em;
+    margin-left: 22.5em;
     color: #ddcc15;
 }
 
 .css button{
-    margin-left: 35%;
+    margin-left: 41.5em;
 }
 
-.css p{
-    padding-bottom: 5%;
-    color:#fcf4a4;
-}
 .cssIMG{
     width: 20em;
     height: 20em;
-    margin-left: 60%;
-    margin-top: -25%;
+    margin-left: 75em;
+    margin-top: -16em;
+    margin-bottom: 3em;
 }
 
 
+/* Sessão Footer */
 footer{
-    width: 100%;
     background-color: #2b2c34;
     text-align: center;
-    padding: 3%;
-    height: 30%;
+    padding: 3em;
+    height: auto;
 }
 
 footer a{
@@ -138,14 +137,14 @@ footer a{
 }
 
 footer p{
-    margin-top: 3%;
     color:  #fcf4a4;
 }
 
 
+/* Página HTML */
 .corpoH section{
     background-color: #dcece3;
-    padding: 3%;
+    padding: 3em;
 }
 
 .corpoH h4{
@@ -153,9 +152,10 @@ footer p{
 }
 
 
+/* Página CSS */
 .corpoC section{
     background-color: #fcf4a4;
-    padding: 3%;
+    padding: 3em;
 }
 
 .corpoC h4{
@@ -163,12 +163,18 @@ footer p{
 }
 
 
+/* Página Login */
+#bodyLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #login{
-    width: 35%;
-    padding: 2%;
-    border-radius: 30px;
-    margin: 12%;
-    margin-left: 35%;
+    width: 50em;
+    padding: 2em;
+    border-radius: 3em;
+    margin-top: 14em;
+
 
     -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.78);
     -moz-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.78);
@@ -180,12 +186,13 @@ footer p{
 }
 
 
+/* Página Cadastro */
 #cadastro{
-    width: 35%;
-    padding: 2%;
-    border-radius: 30px;
-    margin: 5%;
-    margin-left: 35%;
+    width: 40em;
+    padding: 2em;
+    border-radius: 3em;
+    margin-top: 5em;
+    margin-bottom: 5em;
 
     -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.78);
     -moz-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.78);
@@ -197,12 +204,12 @@ footer p{
 }
 
 
+/* Página Senha */
 #senhaconf{
-    width: 35%;
-    padding: 2%;
-    border-radius: 30px;
-    margin: 12%;
-    margin-left: 35%;
+    width: 50em;
+    padding: 2em;
+    border-radius: 3em;
+    margin-top: 14em;
 
     -webkit-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.78);
     -moz-box-shadow: 0px 0px 50px 4px rgba(0, 0, 0, 0.78);
@@ -214,7 +221,19 @@ footer p{
 }
 
 
+/* Responsividade */
 @media (min-width: 1200px) and (max-width: 1919px){
+    nav {
+        padding: 1em;
+    }
+
+     .logo {
+        margin-left: 28em;
+    }
+    
+    .user {
+        margin-left: 52em;
+    }
     .htmlIMG{
         margin-bottom: 3%;
     }
