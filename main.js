@@ -9,12 +9,6 @@ const recSenha = document.getElementById('recSenha');
 const tempoAtraso1 = 1500;
 const tempoAtraso2 = 3500;
 
-// import CryptoJS from "crypto-js";
-// const encryptionKey = 'testeee';
-// const mensagem = 'oi tudo bem!'
-// const mensagemCriptografada = CryptoJS.AES.encrypt(mensagem, encryptionKey).toString();
-// alert(mensagemCriptografada);
-
 if (cadastrar || aprender) {
     cadastrar.addEventListener('click', function () {
         window.location.href = 'cadastro.html';
@@ -51,22 +45,6 @@ if (cadastrar || aprender) {
             errorMessage.textContent = "Usuário não cadastrado!";
             errorMessage.style.color = "red";
         }
-
-        // if (!user || user.senha !== password) {
-        //     errorMessage.textContent = "Credenciais inválidas!";
-        //     errorMessage.style.color = "red";
-        // } else {
-        //     errorMessage.textContent = "Login bem-sucedido!";
-        //     errorMessage.style.color = "green";
-        //     setTimeout(function () {
-        //         errorMessage.textContent = "Redirecionando...";
-        //         errorMessage.style.color = "black";
-        //     }, tempoAtraso1);
-        //     setTimeout(function () {
-        //         window.location.href = "index.html";
-        //     }, tempoAtraso2);
-        // }
-
     });
 
 } else if (aprenderCSS || aprenderHTML) {
@@ -112,9 +90,7 @@ if (cadastrar || aprender) {
             if (localStorage['usuarios']) {
                 usuarios = JSON.parse(localStorage.getItem('usuarios'))
             }
-            // const encryptedData = CryptoJS.AES.encrypt(JSON.stringify(usuarios), encryptionKey).toString();
             usuarios.push(usuarioAdicionar);
-            // localStorage.setItem('usuarios', encryptedData);
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
             errorMessage.textContent = "Cadastro bem-sucedido!";
@@ -153,26 +129,4 @@ if (cadastrar || aprender) {
         }
     });
 };
-
-// Local Storage
-// let nameForm = document.getElementById('username').value;
-// let usernameForm = document.getElementById('usernameUser').value;
-// let emailForm = document.getElementById('email').value;
-// let senhaForm = document.getElementById('senha').value;
-// let confSenhaForm = document.getElementById('confSenha').value;
-// let dataForm = document.getElementById('dtNasc').value;
-// let cepForm = document.getElementById('cep').value;
-// let ruaForm = document.getElementById('rua').value;
-// let numForm = document.getElementById('num').value;
-// let bairroForm = document.getElementById('bairro').value;
-// let cidadeForm = document.getElementById('cidade').value;
-// let ufForm = document.getElementById('uf').value;
-
-// let dados = {name: nameForm, username: usernameForm, email: emailForm, senha: senhaForm, data: dataForm, cep: cepForm, rua: ruaForm, num: numForm, bairro: bairroForm, cidade: cidadeForm, uf: ufForm}
-
-// let usernameSalvo = JSON.parse(localStorage.getItem(dados)).username;
-// let senhaSalvo = JSON.parse(localStorage.getItem(dados)).senha;
-
-// import CryptoJS from 'crypto-js';
-// const encryptionKey = 'pedroMagalhaes123';
 
